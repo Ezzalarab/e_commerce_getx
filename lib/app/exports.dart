@@ -1,3 +1,7 @@
+export 'package:e_commerce_getx/core/constants/ui_values.dart';
+
+export 'package:flutter_screenutil/flutter_screenutil.dart';
+
 export 'package:e_commerce_getx/core/style/app_colors.dart';
 
 export 'package:e_commerce_getx/data/ds/local_ds/local_data.dart';

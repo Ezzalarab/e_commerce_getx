@@ -42,13 +42,14 @@ class OnBoardingPage extends StatelessWidget {
                       ...List.generate(LocalData.onboardingList.length,
                           (index) {
                         return AnimatedContainer(
-                          margin: const EdgeInsets.all(5),
+                          margin: EdgeInsets.all(UiValues.space4.w),
                           duration: const Duration(seconds: 1),
-                          width: 6,
-                          height: 6,
+                          width: UiValues.space4.w,
+                          height: UiValues.space4.h,
                           decoration: BoxDecoration(
                             color: AppColors.primary,
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius:
+                                BorderRadius.circular(UiValues.radius1.w),
                           ),
                         );
                       }),
@@ -56,13 +57,14 @@ class OnBoardingPage extends StatelessWidget {
                   ),
                   const Spacer(),
                   Container(
-                    margin: const EdgeInsets.only(bottom: 40),
-                    height: 40,
+                    margin: EdgeInsets.only(bottom: UiValues.space40.h),
+                    height: UiValues.space40.h,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(UiValues.radius2.w),
                     ),
                     child: MaterialButton(
-                      padding: const EdgeInsets.symmetric(horizontal: 100),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: UiValues.space80.w),
                       color: AppColors.primary,
                       textColor: AppColors.white,
                       onPressed: () {},
