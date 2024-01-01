@@ -16,6 +16,7 @@ class OnBoardingPage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   OnBoarding onBoarding = LocalData.onboardingList[index];
                   return Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Text(
                         onBoarding.title,
