@@ -10,7 +10,7 @@ class OnBoardingPage extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              'Test Text Theme',
+              'Test App Text Theme',
               style: Theme.of(context).textTheme.headlineLarge,
             ),
             Expanded(
