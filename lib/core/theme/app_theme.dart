@@ -202,7 +202,7 @@ class AppTheme {
             color: _lightAppColors.onBackground,
           ),
           bodyMedium: AppTypography.body1.copyWith(
-            color: _lightAppColors.onBackground,
+            color: AppColors.primaryText,
           ),
           titleMedium: AppTypography.h4.copyWith(
             color: _lightAppColors.onBackground,

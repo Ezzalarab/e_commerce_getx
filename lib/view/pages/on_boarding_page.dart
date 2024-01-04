@@ -9,6 +9,10 @@ class OnBoardingPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
+            Text(
+              'Test Text Theme',
+              style: Theme.of(context).textTheme.headlineLarge,
+            ),
             Expanded(
               flex: 3,
               child: PageView.builder(
