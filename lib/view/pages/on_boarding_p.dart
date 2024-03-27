@@ -45,73 +45,13 @@ class OnBoardingP extends StatelessWidget {
                     );
                   }),
                   const Spacer(),
-                  const OnBoardingButton()
+                  const ContinueButton()
                 ],
               ),
             ),
           ],
         ),
       ),
-    );
-  }
-}
-
-class OnBoardingButton extends GetView<OnBoardingCImpl> {
-  const OnBoardingButton({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(bottom: UiValues.space40.h),
-      height: UiValues.space40.h,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(UiValues.radius2.w),
-      ),
-      child: MaterialButton(
-        padding: EdgeInsets.symmetric(horizontal: UiValues.space80.w),
-        color: AppColors.primary,
-        textColor: AppColors.white,
-        onPressed: () {
-          controller.next();
-        },
-        child: const Text('Continue'),
-      ),
-    );
-  }
-}
-
-class OnBoardingSlider extends GetView<OnBoardingCImpl> {
-  const OnBoardingSlider({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return PageView.builder(
-      controller: controller.pageController,
-      onPageChanged: controller.onPageChanged,
-      itemCount: LocalData.onboardingList.length,
-      itemBuilder: (context, index) {
-        OnBoarding onBoarding = LocalData.onboardingList[index];
-        return Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Text(
-              onBoarding.title,
-              style: Theme.of(context).textTheme.headlineLarge,
-            ),
-            Image.asset(
-              onBoarding.image,
-            ),
-            Text(
-              onBoarding.body,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-          ],
-        );
-      },
     );
   }
 }

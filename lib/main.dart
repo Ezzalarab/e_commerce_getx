@@ -1,6 +1,8 @@
 import 'app/exports.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  initialServices();
   runApp(const MyApp());
 }
 
@@ -30,7 +32,8 @@ class MyApp extends StatelessWidget {
 
 Map<String, Widget Function(BuildContext)> routes = {
   AppRoutes.onBoarding: (context) => const OnBoardingP(),
-  // AppRoutes.login: (context) => const LoginP(),
+  AppRoutes.login: (context) => const LoginP(),
+  AppRoutes.language: (context) => const LanguageP(),
   // AppRoutes.home: (context) => const HomeP(),
   // AppRoutes.productDetails: (context) => const ProductDetailsP(),
   // AppRoutes.cart: (context) => const CartP(),

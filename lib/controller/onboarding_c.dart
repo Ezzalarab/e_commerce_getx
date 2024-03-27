@@ -26,7 +26,7 @@ class OnBoardingCImpl extends OnBoardingC {
       );
     } else {
       // go to login
-      Get.offAllNamed(AppRoutes.login);
+      Get.offAllNamed(AppRoutes.language);
     }
   }
 

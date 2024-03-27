@@ -1,3 +1,11 @@
+export 'package:e_commerce_getx/view/pages/language_p.dart';
+export 'package:e_commerce_getx/view/widgets/on_boarding/continue_button.dart';
+export 'package:e_commerce_getx/view/widgets/on_boarding/on_boarding_slider.dart';
+export 'package:e_commerce_getx/view/widgets/lang_button.dart';
+export 'package:e_commerce_getx/core/theme/app_typography.dart';
+export '../core/services/services.dart';
+export 'package:shared_preferences/shared_preferences.dart';
+export 'package:e_commerce_getx/view/pages/auth/login_p.dart';
 export 'package:e_commerce_getx/controller/onboarding_c.dart';
 export 'package:e_commerce_getx/core/theme/app_theme.dart';
 export 'package:e_commerce_getx/core/constants/routes.dart';
