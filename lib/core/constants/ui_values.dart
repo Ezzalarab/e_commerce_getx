@@ -7,6 +7,7 @@ class UiValues {
   static double space20 = 20.0;
   static double space40 = 40.0;
   static double space80 = 80.0;
-  static double radius1 = 10.0;
-  static double radius2 = 20.0;
+  static double radius10 = 10.0;
+  static double radius20 = 20.0;
+  static double radius30 = 30.0;
 }

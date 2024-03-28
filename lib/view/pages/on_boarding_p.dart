@@ -37,7 +37,7 @@ class OnBoardingP extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: AppColors.primary,
                               borderRadius:
-                                  BorderRadius.circular(UiValues.radius1.w),
+                                  BorderRadius.circular(UiValues.radius10.w),
                             ),
                           );
                         }),

@@ -11,7 +11,7 @@ class ContinueButton extends GetView<OnBoardingCImpl> {
       margin: EdgeInsets.only(bottom: UiValues.space40.h),
       height: UiValues.space40.h,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(UiValues.radius2.w),
+        borderRadius: BorderRadius.circular(UiValues.radius20.w),
       ),
       child: MaterialButton(
         padding: EdgeInsets.symmetric(horizontal: UiValues.space80.w),

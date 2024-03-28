@@ -1,5 +1,3 @@
-import 'package:e_commerce_getx/core/localization/change_local_c.dart';
-
 import '../../app/exports.dart';
 
 class LanguageP extends GetView<ChangeLocalC> {

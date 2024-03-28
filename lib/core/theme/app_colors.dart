@@ -2,12 +2,12 @@ import '../../app/exports.dart';
 
 abstract class AppColors {
   // Current App
-  static Color background = grey.greyA;
+  static const Color background = Colors.white;
 
-  static const success = Colors.green;
-  static const link = Colors.blue;
-  static const error = Colors.red;
-  static const imperialRed = Color(0xFFE54B4B);
+  static const Color success = Colors.green;
+  static const Color link = Colors.blue;
+  static const Color error = Colors.red;
+  static const Color imperialRed = Color(0xFFE54B4B);
 
   static const grey = _GreyColors();
 

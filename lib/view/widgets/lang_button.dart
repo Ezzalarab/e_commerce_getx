@@ -18,13 +18,13 @@ class LangButton extends StatelessWidget {
       child: MaterialButton(
         color: AppColors.primary,
         textColor: AppColors.white,
+        onPressed: onPressed,
         child: Text(
           title,
           style: AppTypography.body1.copyWith(
             fontWeight: FontWeight.bold,
           ),
         ),
-        onPressed: onPressed,
       ),
     );
   }

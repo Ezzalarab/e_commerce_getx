@@ -1,8 +1,9 @@
-import 'app_colors_extention.dart';
-import 'app_colors.dart';
-import 'app_typography.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'app_colors.dart';
+import 'app_colors_extention.dart';
+import 'app_typography.dart';
 
 class AppTheme {
   static final _lightAppColors = AppColorsExtension(
@@ -146,7 +147,7 @@ class AppTheme {
       //   color: _lightAppColors.onPrimary,
       // ),
       appBarTheme: AppBarTheme(
-        backgroundColor: _lightAppColors.primary,
+        backgroundColor: _lightAppColors.onPrimary,
         toolbarTextStyle: AppTypography.body1.copyWith(
           color: _lightAppColors.onPrimary,
         ),

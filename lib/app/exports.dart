@@ -1,3 +1,8 @@
+export 'package:e_commerce_getx/view/widgets/auth/auth_logo.dart';
+export 'package:e_commerce_getx/view/widgets/forms/app_text_field.dart';
+export 'package:e_commerce_getx/view/widgets/texts/auth_body_text.dart';
+export 'package:e_commerce_getx/view/widgets/forms/app_button.dart';
+export 'package:e_commerce_getx/view/widgets/texts/page_title.dart';
 export 'package:flutter/material.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:get/get.dart';
