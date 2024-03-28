@@ -5,9 +5,11 @@ class AppTranslations extends Translations {
   Map<String, Map<String, String>> get keys => {
         'en': {
           'hello': 'hello',
+          'choose_language': 'Choose Language',
         },
         'ar': {
           'hello': 'مرحبا',
+          'choose_language': 'اختر اللغة',
         },
       };
 }

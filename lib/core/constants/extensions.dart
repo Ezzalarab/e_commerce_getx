@@ -1,4 +1,4 @@
-import 'exports.dart';
+import '../../app/exports.dart';
 
 extension MediaQueryExtension on BuildContext {
   // Convenience getter for MediaQuery width and height

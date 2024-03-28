@@ -1,8 +1,8 @@
 import 'app/exports.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  initialServices();
+  await initialServices();
   runApp(const MyApp());
 }
 
@@ -11,18 +11,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ChangeLocalC localeC = Get.put(ChangeLocalC());
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
         return GetMaterialApp(
-          title: 'Flutter Demo',
+          title: 'E-commerce App',
+          locale: localeC.language,
+          translations: AppTranslations(),
           theme: AppTheme.light,
           darkTheme: AppTheme.dark,
           themeMode: ThemeMode.system,
           // home: const OnBoardingP(),
-          initialRoute: AppRoutes.onBoarding,
+          initialRoute: AppRoutes.language,
           routes: routes,
         );
       },
