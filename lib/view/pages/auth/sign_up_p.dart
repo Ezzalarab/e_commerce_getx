@@ -1,17 +1,17 @@
 import '../../../app/exports.dart';
 
-class LoginP extends StatelessWidget {
-  const LoginP({super.key});
+class SignUpP extends StatelessWidget {
+  const SignUpP({super.key});
 
   @override
   Widget build(BuildContext context) {
-    LoginCImpl controller = Get.put(LoginCImpl());
+    SingInCImpl controller = Get.put(SingInCImpl());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.background,
         elevation: 0.0,
         title: Text(
-          'login_page'.tr,
+          'sign_up_page'.tr,
           style: AppTypography.h3.copyWith(color: AppColors.primary),
         ),
         centerTitle: true,
@@ -20,12 +20,12 @@ class LoginP extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40.w),
         child: ListView(
           children: [
-            const AuthLogo(),
+            // const AuthLogo(),
             SizedBox(height: 30.h),
             PageTitle('welcome'.tr),
             SizedBox(height: 10.h),
-            AuthBodyText('login_text'.tr),
-            SizedBox(height: 70.h),
+            AuthBodyText('sign_up_text'.tr),
+            SizedBox(height: 50.h),
             AppTextField(
               textController: controller.emailC,
               label: 'email'.tr,
@@ -34,37 +34,37 @@ class LoginP extends StatelessWidget {
             ),
             SizedBox(height: 20.h),
             AppTextField(
+              textController: controller.userNameC,
+              label: 'user_name'.tr,
+              hintText: 'enter_user_name'.tr,
+              icon: Icons.key_outlined,
+            ),
+            SizedBox(height: 20.h),
+            AppTextField(
+              textController: controller.phoneC,
+              label: 'phone'.tr,
+              hintText: 'enter_phone'.tr,
+              icon: Icons.key_outlined,
+            ),
+            SizedBox(height: 20.h),
+            AppTextField(
               textController: controller.passwordC,
               label: 'password'.tr,
               hintText: 'enter_password'.tr,
               icon: Icons.key_outlined,
             ),
-            SizedBox(height: 20.h),
-            InkWell(
-              onTap: () {
-                controller.goToForgotPassword();
-              },
-              child: Text(
-                'forgot_password'.tr,
-                style: AppTypography.body1.copyWith(
-                    color: AppColors.primary, fontWeight: FontWeight.bold),
-              ),
-            ),
             SizedBox(height: 40.h),
             AppButton(
-              title: 'login'.tr,
-              onPressed: () {
-                controller.login();
-              },
+              title: 'sign_up'.tr,
+              onPressed: () {},
             ),
             SizedBox(height: 20.h),
             TextOnTapText(
-              firstText: 'dont_have_account'.tr,
-              onTapText: 'sign_up'.tr,
-              onTap: () {
-                controller.goToSignUp();
-              },
+              firstText: 'already_have_account?'.tr,
+              onTapText: 'login'.tr,
+              onTap: () => controller.goToLogin(),
             ),
+            SizedBox(height: 30.h),
           ],
         ),
       ),

@@ -36,7 +36,9 @@ class MyApp extends StatelessWidget {
 Map<String, Widget Function(BuildContext)> routes = {
   AppRoutes.onBoarding: (context) => const OnBoardingP(),
   AppRoutes.login: (context) => const LoginP(),
+  AppRoutes.signUp: (context) => const SignUpP(),
   AppRoutes.language: (context) => const LanguageP(),
+  AppRoutes.forgotPassword: (context) => const ForgotPasswordP(),
   // AppRoutes.home: (context) => const HomeP(),
   // AppRoutes.productDetails: (context) => const ProductDetailsP(),
   // AppRoutes.cart: (context) => const CartP(),

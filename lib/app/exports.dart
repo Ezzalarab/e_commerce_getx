@@ -1,3 +1,11 @@
+export 'package:e_commerce_getx/controller/auth/forgot_password_c.dart';
+export 'package:e_commerce_getx/view/pages/auth/forgot_password_p.dart';
+
+export 'package:e_commerce_getx/view/widgets/auth/text_on_tap_text.dart';
+export 'package:e_commerce_getx/controller/auth/sign_up_c.dart';
+export 'package:e_commerce_getx/controller/auth/login_c.dart';
+export 'package:e_commerce_getx/view/pages/auth/sign_up_p.dart';
+
 export 'package:e_commerce_getx/view/widgets/auth/auth_logo.dart';
 export 'package:e_commerce_getx/view/widgets/forms/app_text_field.dart';
 export 'package:e_commerce_getx/view/widgets/texts/auth_body_text.dart';
