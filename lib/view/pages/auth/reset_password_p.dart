@@ -1,17 +1,17 @@
 import '../../../app/exports.dart';
 
-class ForgotPasswordP extends StatelessWidget {
-  const ForgotPasswordP({super.key});
+class ResetPasswordP extends StatelessWidget {
+  const ResetPasswordP({super.key});
 
   @override
   Widget build(BuildContext context) {
-    ForgotPasswordCImpl controller = Get.put(ForgotPasswordCImpl());
+    ResetPasswordCImpl controller = Get.put(ResetPasswordCImpl());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.background,
         elevation: 0.0,
         title: Text(
-          'forgot_password_page'.tr,
+          'reset_password_page'.tr,
           style: AppTypography.h3.copyWith(color: AppColors.primary),
         ),
         centerTitle: true,
@@ -22,21 +22,28 @@ class ForgotPasswordP extends StatelessWidget {
           children: [
             // const AuthLogo(),
             SizedBox(height: 30.h),
-            PageTitle('check_email'.tr),
+            PageTitle('reset_password'.tr),
             SizedBox(height: 10.h),
-            AuthBodyText('check_email_text'.tr),
+            AuthBodyText('reset_password_text'.tr),
             SizedBox(height: 70.h),
             AppTextField(
-              textController: controller.emailC,
-              label: 'email'.tr,
-              hintText: 'enter_email'.tr,
-              icon: Icons.email_outlined,
+              textController: controller.password,
+              label: 'password'.tr,
+              hintText: 'enter_new_password'.tr,
+              icon: Icons.key_outlined,
+            ),
+            SizedBox(height: 20.h),
+            AppTextField(
+              textController: controller.confirmPassword,
+              label: 'confirm_password'.tr,
+              hintText: 'retype_your_password'.tr,
+              icon: Icons.key,
             ),
             SizedBox(height: 40.h),
             AppButton(
-              title: 'verify'.tr,
+              title: 'reset'.tr,
               onPressed: () {
-                controller.goToVerifyCode();
+                controller.goToLogin();
               },
             ),
           ],

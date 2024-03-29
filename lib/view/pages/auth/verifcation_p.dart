@@ -5,7 +5,7 @@ class VerificationP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ForgotPasswordCImpl controller = Get.put(ForgotPasswordCImpl());
+    VerificationCImpl controller = Get.put(VerificationCImpl());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.background,
@@ -20,25 +20,24 @@ class VerificationP extends StatelessWidget {
         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40.w),
         child: ListView(
           children: [
-            const AuthLogo(),
+            // const AuthLogo(),
             SizedBox(height: 30.h),
-            PageTitle('check_email'.tr),
+            PageTitle('verification'.tr),
             SizedBox(height: 10.h),
-            AuthBodyText('check_email_text'.tr),
-            SizedBox(height: 70.h),
-            AppTextField(
-              textController: controller.emailC,
-              label: 'email'.tr,
-              hintText: 'enter_email'.tr,
-              icon: Icons.email_outlined,
-            ),
-            SizedBox(height: 40.h),
-            AppButton(
-              title: 'verify'.tr,
-              onPressed: () {
-                controller.goToVerifyCode();
+            AuthBodyText('verification_text'.tr),
+            SizedBox(height: 50.h),
+            OtpTextField(
+              fieldWidth: 50.w,
+              numberOfFields: 4,
+              borderColor: AppColors.primary,
+              borderRadius: BorderRadius.circular(UiValues.radius20.w),
+              showFieldAsBox: true,
+              onCodeChanged: (String code) {},
+              onSubmit: (String verificationCode) {
+                controller.verify();
               },
             ),
+            SizedBox(height: 40.h),
           ],
         ),
       ),

@@ -16,7 +16,7 @@ class VerificationCImpl extends VerificationC {
 
   @override
   void verify() {
-    Get.offNamed(AppRoutes.login);
+    Get.offNamed(AppRoutes.resetPassword);
   }
 
   @override

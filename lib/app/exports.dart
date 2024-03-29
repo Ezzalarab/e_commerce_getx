@@ -1,3 +1,12 @@
+export 'package:e_commerce_getx/view/pages/auth/success_reset_password_p.dart';
+export 'package:e_commerce_getx/view/pages/auth/success_sign_up_p.dart';
+export 'package:e_commerce_getx/view/pages/auth/reset_password_p.dart';
+
+export 'package:e_commerce_getx/controller/auth/reset_password_c.dart';
+
+export 'package:e_commerce_getx/controller/auth/verification_c.dart';
+export 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+export '../view/pages/auth/verifcation_p.dart';
 export 'package:e_commerce_getx/controller/auth/forgot_password_c.dart';
 export 'package:e_commerce_getx/view/pages/auth/forgot_password_p.dart';
 
