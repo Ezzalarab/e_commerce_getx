@@ -1,4 +1,4 @@
-import '../../app/exports.dart';
+import '../../../app/exports.dart';
 
 abstract class VerificationC extends GetxController {
   void verify();

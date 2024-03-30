@@ -1,8 +1,8 @@
-import '../../app/exports.dart';
+import '../../../app/exports.dart';
 
 abstract class ResetPasswordC extends GetxController {
   void resetPassword();
-  void goToLogin();
+  void goToSuccessResetPassword();
 }
 
 class ResetPasswordCImpl extends ResetPasswordC {
@@ -21,8 +21,8 @@ class ResetPasswordCImpl extends ResetPasswordC {
   void resetPassword() {}
 
   @override
-  void goToLogin() {
-    Get.offNamed(AppRoutes.login);
+  void goToSuccessResetPassword() {
+    Get.offNamed(AppRoutes.successResetPassword);
   }
 
   @override

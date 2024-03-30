@@ -1,7 +1,7 @@
 import '../../app/exports.dart';
 
 abstract class SignInC extends GetxController {
-  void signIn();
+  void signUp();
   void goToLogin();
 }
 
@@ -22,7 +22,9 @@ class SingInCImpl extends SignInC {
   }
 
   @override
-  void signIn() {}
+  void signUp() {
+    Get.offNamed(AppRoutes.checkEmail);
+  }
 
   @override
   void goToLogin() {

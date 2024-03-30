@@ -1,14 +1,16 @@
-export 'package:e_commerce_getx/view/pages/auth/success_reset_password_p.dart';
-export 'package:e_commerce_getx/view/pages/auth/success_sign_up_p.dart';
-export 'package:e_commerce_getx/view/pages/auth/reset_password_p.dart';
+export 'package:e_commerce_getx/controller/auth/check_email_c.dart';
 
-export 'package:e_commerce_getx/controller/auth/reset_password_c.dart';
+export 'package:e_commerce_getx/view/pages/auth/forgot_password/success_reset_password_p.dart';
+export 'package:e_commerce_getx/view/pages/auth/verify_success_p.dart';
+export 'package:e_commerce_getx/view/pages/auth/forgot_password/reset_password_p.dart';
 
-export 'package:e_commerce_getx/controller/auth/verification_c.dart';
+export 'package:e_commerce_getx/controller/auth/forgot_password/reset_password_c.dart';
+
+export 'package:e_commerce_getx/controller/auth/forgot_password/verification_c.dart';
 export 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
-export '../view/pages/auth/verifcation_p.dart';
-export 'package:e_commerce_getx/controller/auth/forgot_password_c.dart';
-export 'package:e_commerce_getx/view/pages/auth/forgot_password_p.dart';
+export '../view/pages/auth/forgot_password/verifcation_p.dart';
+export 'package:e_commerce_getx/controller/auth/forgot_password/forgot_password_c.dart';
+export 'package:e_commerce_getx/view/pages/auth/forgot_password/forgot_password_p.dart';
 
 export 'package:e_commerce_getx/view/widgets/auth/text_on_tap_text.dart';
 export 'package:e_commerce_getx/controller/auth/sign_up_c.dart';

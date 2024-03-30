@@ -56,7 +56,9 @@ class SignUpP extends StatelessWidget {
             SizedBox(height: 40.h),
             AppButton(
               title: 'sign_up'.tr,
-              onPressed: () {},
+              onPressed: () {
+                controller.signUp();
+              },
             ),
             SizedBox(height: 20.h),
             TextOnTapText(

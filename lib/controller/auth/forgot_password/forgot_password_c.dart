@@ -1,4 +1,4 @@
-import '../../app/exports.dart';
+import '../../../app/exports.dart';
 
 abstract class ForgotPasswordC extends GetxController {
   void checkEmail();
@@ -20,7 +20,7 @@ class ForgotPasswordCImpl extends ForgotPasswordC {
 
   @override
   void goToVerifyCode() {
-    Get.offNamed(AppRoutes.verifyCode);
+    Get.offNamed(AppRoutes.verification);
   }
 
   @override

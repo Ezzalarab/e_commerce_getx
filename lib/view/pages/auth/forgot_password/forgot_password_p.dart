@@ -1,4 +1,4 @@
-import '../../../app/exports.dart';
+import '../../../../app/exports.dart';
 
 class ForgotPasswordP extends StatelessWidget {
   const ForgotPasswordP({super.key});

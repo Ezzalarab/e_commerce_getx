@@ -1,4 +1,4 @@
-import '../../../app/exports.dart';
+import '../../../../app/exports.dart';
 
 class ResetPasswordP extends StatelessWidget {
   const ResetPasswordP({super.key});
@@ -43,7 +43,7 @@ class ResetPasswordP extends StatelessWidget {
             AppButton(
               title: 'reset'.tr,
               onPressed: () {
-                controller.goToLogin();
+                controller.goToSuccessResetPassword();
               },
             ),
           ],
