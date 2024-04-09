@@ -7,6 +7,7 @@ abstract class LoginC extends GetxController {
 }
 
 class LoginCImpl extends LoginC {
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
   late TextEditingController emailC;
   late TextEditingController passwordC;
 
@@ -19,7 +20,12 @@ class LoginCImpl extends LoginC {
   }
 
   @override
-  void login() {}
+  void login() {
+    if (formKey.currentState!.validate()) {
+      Get.toNamed(AppRoutes.verification);
+    }
+  }
+
   @override
   void goToForgotPassword() {
     Get.toNamed(AppRoutes.forgotPassword);

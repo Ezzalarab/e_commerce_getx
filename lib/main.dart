@@ -1,5 +1,3 @@
-import 'package:e_commerce_getx/view/pages/auth/check_email_p.dart';
-
 import 'app/exports.dart';
 
 void main() async {
@@ -42,10 +40,9 @@ Map<String, Widget Function(BuildContext)> routes = {
   AppRoutes.language: (context) => const LanguageP(),
   AppRoutes.forgotPassword: (context) => const ForgotPasswordP(),
   AppRoutes.verification: (context) => const VerificationP(),
-  AppRoutes.resetPassword: (context) => const ResetPasswordP(),
-  AppRoutes.checkEmail: (context) => const CheckEmailP(),
-  AppRoutes.successResetPassword: (context) => const SuccessResetPasswordP(),
   AppRoutes.verifySuccess: (context) => const VerifySuccessP(),
+  AppRoutes.resetPassword: (context) => const ResetPasswordP(),
+  AppRoutes.successResetPassword: (context) => const SuccessResetPasswordP(),
   // AppRoutes.home: (context) => const HomeP(),
   // AppRoutes.productDetails: (context) => const ProductDetailsP(),
   // AppRoutes.cart: (context) => const CartP(),

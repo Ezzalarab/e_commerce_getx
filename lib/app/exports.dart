@@ -1,5 +1,3 @@
-export 'package:e_commerce_getx/controller/auth/check_email_c.dart';
-
 export 'package:e_commerce_getx/view/pages/auth/forgot_password/success_reset_password_p.dart';
 export 'package:e_commerce_getx/view/pages/auth/verify_success_p.dart';
 export 'package:e_commerce_getx/view/pages/auth/forgot_password/reset_password_p.dart';

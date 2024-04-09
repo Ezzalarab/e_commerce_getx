@@ -10,13 +10,12 @@ class VerificationCImpl extends VerificationC {
   @override
   void onInit() {
     verifyCode = TextEditingController();
-
     super.onInit();
   }
 
   @override
   void verify() {
-    Get.offNamed(AppRoutes.resetPassword);
+    Get.offNamed(AppRoutes.login);
   }
 
   @override

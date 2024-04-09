@@ -4,6 +4,7 @@ class AppTextField extends StatelessWidget {
   const AppTextField({
     required this.textController,
     required this.label,
+    this.validator,
     this.hintText,
     this.icon,
     super.key,
@@ -11,6 +12,7 @@ class AppTextField extends StatelessWidget {
 
   final TextEditingController textController;
   final String label;
+  final String? Function(String?)? validator;
   final String? hintText;
   final IconData? icon;
 
@@ -18,6 +20,7 @@ class AppTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       controller: textController,
+      validator: validator,
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(vertical: 5.h, horizontal: 30.w),
         floatingLabelBehavior: FloatingLabelBehavior.always,

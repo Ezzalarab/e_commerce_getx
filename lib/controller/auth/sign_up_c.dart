@@ -1,11 +1,11 @@
 import '../../app/exports.dart';
 
-abstract class SignInC extends GetxController {
+abstract class SignUpC extends GetxController {
   void signUp();
   void goToLogin();
 }
 
-class SingInCImpl extends SignInC {
+class SignUpCImpl extends SignUpC {
   late TextEditingController emailC;
   late TextEditingController userNameC;
   late TextEditingController phoneC;
@@ -23,7 +23,8 @@ class SingInCImpl extends SignInC {
 
   @override
   void signUp() {
-    Get.offNamed(AppRoutes.checkEmail);
+    Get.offNamed(AppRoutes.verification);
+    // Get.delete<SingUpCImpl>();
   }
 
   @override
