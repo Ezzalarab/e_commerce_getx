@@ -7,6 +7,7 @@ abstract class ForgotPasswordC extends GetxController {
 
 class ForgotPasswordCImpl extends ForgotPasswordC {
   late TextEditingController emailC;
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   @override
   void onInit() {
@@ -16,7 +17,11 @@ class ForgotPasswordCImpl extends ForgotPasswordC {
   }
 
   @override
-  void checkEmail() {}
+  void checkEmail() {
+    if (formKey.currentState!.validate()) {
+      goToVerifyCode();
+    }
+  }
 
   @override
   void goToVerifyCode() {

@@ -16,7 +16,7 @@ String? inputValidator(String? val, int min, int max, String type) {
     if (!GetUtils.isPhoneNumber(val)) {
       return 'invalid_phone'.tr;
     }
-  } else if (type == 'username') {
+  } else if (type == 'user_name') {
     if (!GetUtils.isUsername(val)) {
       return 'invalid_username'.tr;
     }

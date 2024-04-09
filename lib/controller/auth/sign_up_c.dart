@@ -10,6 +10,7 @@ class SignUpCImpl extends SignUpC {
   late TextEditingController userNameC;
   late TextEditingController phoneC;
   late TextEditingController passwordC;
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   @override
   void onInit() {
@@ -23,7 +24,9 @@ class SignUpCImpl extends SignUpC {
 
   @override
   void signUp() {
-    Get.offNamed(AppRoutes.verification);
+    if (formKey.currentState!.validate()) {
+      Get.offNamed(AppRoutes.verification);
+    }
     // Get.delete<SingUpCImpl>();
   }
 

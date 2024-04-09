@@ -22,7 +22,7 @@ class LoginCImpl extends LoginC {
   @override
   void login() {
     if (formKey.currentState!.validate()) {
-      Get.toNamed(AppRoutes.verification);
+      Get.offNamed(AppRoutes.home);
     }
   }
 

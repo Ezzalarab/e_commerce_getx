@@ -8,6 +8,7 @@ abstract class ResetPasswordC extends GetxController {
 class ResetPasswordCImpl extends ResetPasswordC {
   late TextEditingController password;
   late TextEditingController confirmPassword;
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   @override
   void onInit() {
@@ -18,7 +19,11 @@ class ResetPasswordCImpl extends ResetPasswordC {
   }
 
   @override
-  void resetPassword() {}
+  void resetPassword() {
+    if (formKey.currentState!.validate()) {
+      goToSuccessResetPassword();
+    }
+  }
 
   @override
   void goToSuccessResetPassword() {

@@ -5,7 +5,7 @@ class VerificationP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    VerificationCImpl controller = Get.put(VerificationCImpl());
+    VerifResetPassCImpl controller = Get.put(VerifResetPassCImpl());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.background,

@@ -1,7 +1,7 @@
 import '../../../../app/exports.dart';
 
-class SuccessResetPasswordP extends StatelessWidget {
-  const SuccessResetPasswordP({super.key});
+class ResetPassSuccessP extends StatelessWidget {
+  const ResetPassSuccessP({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class SuccessResetPasswordP extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 40.h),
-              PageTitle('reset_password_success'.tr),
+              PageTitle('verification_success'.tr),
               SizedBox(height: 40.h),
               Center(
                 child: Icon(
@@ -25,9 +25,9 @@ class SuccessResetPasswordP extends StatelessWidget {
               SizedBox(
                 width: Get.width,
                 child: AppButton(
-                  title: 'reset_password_success'.tr,
+                  title: 'ferification_success'.tr,
                   onPressed: () {
-                    Get.offNamedUntil(AppRoutes.home, (route) => false);
+                    Get.offNamedUntil(AppRoutes.login, (route) => false);
                   },
                 ),
               ),

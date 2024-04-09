@@ -1,5 +1,3 @@
-import 'package:e_commerce_getx/core/functions/input_validators.dart';
-
 import '../../../app/exports.dart';
 
 class LoginP extends StatelessWidget {

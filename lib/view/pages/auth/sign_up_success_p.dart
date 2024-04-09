@@ -1,7 +1,7 @@
 import '../../../app/exports.dart';
 
-class VerifySuccessP extends StatelessWidget {
-  const VerifySuccessP({super.key});
+class SignUpSuccessP extends StatelessWidget {
+  const SignUpSuccessP({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class VerifySuccessP extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 40.h),
-              PageTitle('check_success'.tr),
+              PageTitle('verification_success'.tr),
               SizedBox(height: 40.h),
               Center(
                 child: Icon(
@@ -25,7 +25,7 @@ class VerifySuccessP extends StatelessWidget {
               SizedBox(
                 width: Get.width,
                 child: AppButton(
-                  title: 'ferified_success'.tr,
+                  title: 'ferification_success'.tr,
                   onPressed: () {
                     Get.offNamedUntil(AppRoutes.home, (route) => false);
                   },

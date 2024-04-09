@@ -16,30 +16,34 @@ class ForgotPasswordP extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Container(
-        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40.w),
-        child: ListView(
-          children: [
-            // const AuthLogo(),
-            SizedBox(height: 30.h),
-            PageTitle('check_email'.tr),
-            SizedBox(height: 10.h),
-            AuthBodyText('check_email_text'.tr),
-            SizedBox(height: 70.h),
-            AppTextField(
-              textController: controller.emailC,
-              label: 'email'.tr,
-              hintText: 'enter_email'.tr,
-              icon: Icons.email_outlined,
-            ),
-            SizedBox(height: 40.h),
-            AppButton(
-              title: 'verify'.tr,
-              onPressed: () {
-                controller.goToVerifyCode();
-              },
-            ),
-          ],
+      body: Form(
+        key: controller.formKey,
+        child: Container(
+          padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40.w),
+          child: ListView(
+            children: [
+              // const AuthLogo(),
+              SizedBox(height: 30.h),
+              PageTitle('check_email'.tr),
+              SizedBox(height: 10.h),
+              AuthBodyText('check_email_text'.tr),
+              SizedBox(height: 70.h),
+              AppTextField(
+                textController: controller.emailC,
+                validator: (value) => inputValidator(value, 5, 100, 'email'),
+                label: 'email'.tr,
+                hintText: 'enter_email'.tr,
+                icon: Icons.email_outlined,
+              ),
+              SizedBox(height: 40.h),
+              AppButton(
+                title: 'verify'.tr,
+                onPressed: () {
+                  controller.checkEmail();
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );

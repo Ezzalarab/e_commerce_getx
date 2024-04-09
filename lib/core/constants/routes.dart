@@ -5,10 +5,11 @@ class AppRoutes {
   static const String forgotPassword = '/forgot-password';
   static const String resetPassword = '/reset-password';
   static const String verification = '/verification';
+  static const String verifySignUp = '/verify-sign-up';
   static const String successResetPassword = '/success-reset-password';
   static const String verifySuccess = '/verify-success';
-
   static const String home = '/home';
+
   static const String language = '/language';
   static const String productDetails = '/product-details';
   static const String cart = '/cart';

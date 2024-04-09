@@ -1,10 +1,10 @@
 import '../../../app/exports.dart';
 
-abstract class VerificationC extends GetxController {
+abstract class VerifySignUpC extends GetxController {
   void verify();
 }
 
-class VerificationCImpl extends VerificationC {
+class VerifySignUpCImpl extends VerifySignUpC {
   late TextEditingController verifyCode;
 
   @override
@@ -15,7 +15,7 @@ class VerificationCImpl extends VerificationC {
 
   @override
   void verify() {
-    Get.offNamed(AppRoutes.login);
+    Get.offNamed(AppRoutes.home);
   }
 
   @override

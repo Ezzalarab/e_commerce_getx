@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
-import 'app_colors.dart';
-import 'app_colors_extention.dart';
-import 'app_typography.dart';
+import '../../app/exports.dart';
 
 class AppTheme {
   static final AppColorsExtension _lightAppColors = AppColorsExtension(
