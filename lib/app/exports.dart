@@ -1,3 +1,5 @@
+export 'package:e_commerce_getx/app/app_bindings.dart';
+export 'package:e_commerce_getx/core/functions/alert_exit_app.dart';
 export 'package:flutter/material.dart';
 export 'package:flutter/services.dart';
 export 'package:flutter_otp_text_field/flutter_otp_text_field.dart';

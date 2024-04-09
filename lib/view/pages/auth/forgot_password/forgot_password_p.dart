@@ -34,6 +34,7 @@ class ForgotPasswordP extends StatelessWidget {
                 label: 'email'.tr,
                 hintText: 'enter_email'.tr,
                 icon: Icons.email_outlined,
+                keyboardType: TextInputType.emailAddress,
               ),
               SizedBox(height: 40.h),
               AppButton(

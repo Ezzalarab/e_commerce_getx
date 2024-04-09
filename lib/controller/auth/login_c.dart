@@ -28,12 +28,12 @@ class LoginCImpl extends LoginC {
 
   @override
   void goToForgotPassword() {
-    Get.toNamed(AppRoutes.forgotPassword);
+    Get.offNamed(AppRoutes.forgotPassword);
   }
 
   @override
   void goToSignUp() {
-    Get.toNamed(AppRoutes.signUp);
+    Get.offNamed(AppRoutes.signUp);
   }
 
   @override

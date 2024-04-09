@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
           theme: AppTheme.lightAr,
           darkTheme: AppTheme.darkAr,
           themeMode: ThemeMode.system,
+          initialBinding: AppBindings(),
           // home: const OnBoardingP(),
           initialRoute: AppRoutes.login,
           routes: routes,

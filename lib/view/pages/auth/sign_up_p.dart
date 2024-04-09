@@ -5,7 +5,6 @@ class SignUpP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Get.lazyPut(() => SignUpCImpl());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.background,
@@ -37,6 +36,7 @@ class SignUpP extends StatelessWidget {
                     label: 'email'.tr,
                     hintText: 'enter_email'.tr,
                     icon: Icons.email_outlined,
+                    keyboardType: TextInputType.emailAddress,
                   ),
                   SizedBox(height: 20.h),
                   AppTextField(
@@ -55,6 +55,7 @@ class SignUpP extends StatelessWidget {
                     label: 'phone'.tr,
                     hintText: 'enter_phone'.tr,
                     icon: Icons.key_outlined,
+                    keyboardType: TextInputType.phone,
                   ),
                   SizedBox(height: 20.h),
                   AppTextField(
