@@ -1,3 +1,8 @@
+export 'package:e_commerce_getx/core/class/request_status.dart';
+
+export 'package:e_commerce_getx/core/class/crud.dart';
+
+export 'package:e_commerce_getx/core/middleware/app_middleware.dart';
 export 'package:e_commerce_getx/app/app_bindings.dart';
 export 'package:e_commerce_getx/core/functions/alert_exit_app.dart';
 export 'package:flutter/material.dart';

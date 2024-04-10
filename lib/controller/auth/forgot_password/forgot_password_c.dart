@@ -25,7 +25,7 @@ class ForgotPasswordCImpl extends ForgotPasswordC {
 
   @override
   void goToVerifyCode() {
-    Get.offNamed(AppRoutes.verification);
+    Get.offNamed(AppRoutes.verifyResetPass);
   }
 
   @override

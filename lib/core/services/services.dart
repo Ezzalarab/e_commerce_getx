@@ -7,6 +7,14 @@ class AppServices extends GetxService {
     prefs = await SharedPreferences.getInstance();
     return this;
   }
+
+  String getIsOnBoarding() {
+    return prefs.getString('is_on_boarding') ?? "0";
+  }
+
+  void setIsOnBoarding(String value) {
+    prefs.setString('is_on_boarding', value);
+  }
 }
 
 initialServices() async {

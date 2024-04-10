@@ -25,7 +25,7 @@ class SignUpCImpl extends SignUpC {
   @override
   void signUp() {
     if (formKey.currentState!.validate()) {
-      Get.offNamed(AppRoutes.verification);
+      Get.offNamed(AppRoutes.verifyResetPass);
     }
     // Get.delete<SingUpCImpl>();
   }

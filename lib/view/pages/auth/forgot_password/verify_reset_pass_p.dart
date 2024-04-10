@@ -1,7 +1,7 @@
 import '../../../../app/exports.dart';
 
-class VerificationP extends StatelessWidget {
-  const VerificationP({super.key});
+class VerifyResetPassP extends StatelessWidget {
+  const VerifyResetPassP({super.key});
 
   @override
   Widget build(BuildContext context) {

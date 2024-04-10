@@ -8,6 +8,7 @@ abstract class OnBoardingC extends GetxController {
 class OnBoardingCImpl extends OnBoardingC {
   int pageIndex = 0;
   late PageController pageController;
+  AppServices appServices = Get.find();
 
   @override
   void onInit() {
@@ -26,7 +27,8 @@ class OnBoardingCImpl extends OnBoardingC {
       );
     } else {
       // go to login
-      Get.offAllNamed(AppRoutes.language);
+      appServices.setIsOnBoarding('1');
+      Get.offAllNamed(AppRoutes.login);
     }
   }
 

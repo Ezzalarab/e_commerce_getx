@@ -25,30 +25,61 @@ class MyApp extends StatelessWidget {
           darkTheme: AppTheme.darkAr,
           themeMode: ThemeMode.system,
           initialBinding: AppBindings(),
-          // home: const OnBoardingP(),
-          initialRoute: AppRoutes.login,
-          routes: routes,
+          initialRoute: AppRoutes.language,
+          // routes: routes,
+          getPages: routes,
         );
       },
     );
   }
 }
 
-Map<String, Widget Function(BuildContext)> routes = {
-  AppRoutes.onBoarding: (context) => const OnBoardingP(),
-  AppRoutes.login: (context) => const LoginP(),
-  AppRoutes.signUp: (context) => const SignUpP(),
-  AppRoutes.language: (context) => const LanguageP(),
-  AppRoutes.forgotPassword: (context) => const ForgotPasswordP(),
-  AppRoutes.verification: (context) => const VerificationP(),
-  AppRoutes.verifySuccess: (context) => const SignUpSuccessP(),
-  AppRoutes.resetPassword: (context) => const ResetPasswordP(),
-  AppRoutes.successResetPassword: (context) => const SuccessResetPasswordP(),
-  AppRoutes.home: (context) => const HomeP(),
+List<GetPage<dynamic>>? routes = [
+  GetPage(
+    name: AppRoutes.language,
+    page: () => const LanguageP(),
+    middlewares: [AppMiddleware()],
+  ),
+  GetPage(
+    name: AppRoutes.onBoarding,
+    page: () => const OnBoardingP(),
+  ),
+  GetPage(
+    name: AppRoutes.login,
+    page: () => const LoginP(),
+  ),
+  GetPage(
+    name: AppRoutes.signUp,
+    page: () => const SignUpP(),
+  ),
+  GetPage(
+    name: AppRoutes.forgotPassword,
+    page: () => const ForgotPasswordP(),
+  ),
+  GetPage(
+    name: AppRoutes.verifyResetPass,
+    page: () => const VerifyResetPassP(),
+  ),
+  GetPage(
+    name: AppRoutes.verifySuccess,
+    page: () => const SignUpSuccessP(),
+  ),
+  GetPage(
+    name: AppRoutes.resetPassword,
+    page: () => const ResetPasswordP(),
+  ),
+  GetPage(
+    name: AppRoutes.successResetPassword,
+    page: () => const SuccessResetPasswordP(),
+  ),
+  GetPage(
+    name: AppRoutes.home,
+    page: () => const HomeP(),
+  ),
   // AppRoutes.productDetails: (context) => const ProductDetailsP(),
   // AppRoutes.cart: (context) => const CartP(),
   // AppRoutes.checkout: (context) => const CheckoutP(),
   // AppRoutes.orders: (context) => const OrdersP(),
   // AppRoutes.profile: (context) => const ProfileP(),
   // AppRoutes.splash: (context) => const SplashP(),
-};
+];
