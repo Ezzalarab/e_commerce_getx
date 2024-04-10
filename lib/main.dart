@@ -53,6 +53,10 @@ List<GetPage<dynamic>>? routes = [
     page: () => const SignUpP(),
   ),
   GetPage(
+    name: AppRoutes.verifySignUp,
+    page: () => const VerifySignUpP(),
+  ),
+  GetPage(
     name: AppRoutes.forgotPassword,
     page: () => const ForgotPasswordP(),
   ),

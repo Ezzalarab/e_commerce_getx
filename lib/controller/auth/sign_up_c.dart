@@ -13,8 +13,8 @@ class SignUpCImpl extends SignUpC {
   late TextEditingController phoneC;
   late TextEditingController passwordC;
   late GlobalKey<FormState> formKey;
-  late RequestStatus requestStatus;
   late SignUpDS signUpDS;
+  RequestStatus? requestStatus;
 
   @override
   void onInit() {
@@ -46,7 +46,9 @@ class SignUpCImpl extends SignUpC {
         log('appResponse.data.toString() verify code:');
         log(appResponse.data.toString());
 
-        Get.offNamed(AppRoutes.verifyResetPass);
+        Get.offNamed(AppRoutes.verifySignUp, arguments: {
+          'email': emailC.text,
+        });
       } else {
         Get.defaultDialog(title: 'warning'.tr, middleText: 'login_failed'.tr);
         requestStatus = RequestStatus.failure;

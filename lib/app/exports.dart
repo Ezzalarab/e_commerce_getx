@@ -1,6 +1,9 @@
+export 'package:e_commerce_getx/data/ds/remote_ds/auth/verify_sign_up_ds.dart';
+export 'package:e_commerce_getx/controller/auth/verify_sign_up_c.dart';
+export 'package:e_commerce_getx/view/pages/auth/verify_sign_up_p.dart';
 export 'package:e_commerce_getx/core/class/app_response.dart';
 export 'package:e_commerce_getx/core/functions/handle_response.dart';
-export 'package:e_commerce_getx/data/ds/remote_ds/auth/sign_up.dart';
+export 'package:e_commerce_getx/data/ds/remote_ds/auth/sign_up_ds.dart';
 export 'package:e_commerce_getx/app/app_links.dart';
 export 'package:e_commerce_getx/core/class/request_status.dart';
 

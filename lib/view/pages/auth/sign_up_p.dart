@@ -17,6 +17,9 @@ class SignUpP extends StatelessWidget {
       ),
       body: GetBuilder<SignUpCImpl>(
         builder: (controller) {
+          if (controller.requestStatus == RequestStatus.loading) {
+            return const Center(child: CircularProgressIndicator());
+          }
           return Form(
             key: controller.formKey,
             child: Container(
